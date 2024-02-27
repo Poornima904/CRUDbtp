@@ -1,0 +1,9 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	<Button core:require="{ handler: 'app1/ext/fragment/Editfragment'}" text="Edit" press="handler.onEdit" />
+	
+</core:FragmentDefinition>
+
+
+
+
+

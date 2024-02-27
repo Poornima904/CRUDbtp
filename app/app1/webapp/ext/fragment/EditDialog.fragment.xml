@@ -1,0 +1,22 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+
+    <Dialog id="editDialog"  resizable="true" draggable="true" title="Update Existing Entries" class="sapUiContentPadding"  >
+        <VBox>
+            <Label for="Plant" showColon="true" text="Plant" />
+            <Input id="Plant" value="{/Plant}" editable = "false" placeholder="Enter Plant" />
+         
+            <Label for="SBG" showColon="true" text="SBG" />
+            <Input id="SBG" value="{/SBG}" placeholder="Enter SBG" />
+              
+            <Label for="SBU" showColon="true" text="SBU" />
+            <Input id="SBU" value="{/SBU}" placeholder="Enter SBU" />
+        
+            <Button id="sv" design="Emphasized" core:require="{ handler:'app1/ext/fragment/Editfragment'}"
+            press="handler.handleUpdate" text="Update"/>
+            <Button id="dis" design="Emphasized" core:require="{ handler:'app1/ext/controller/Createhand'}"
+            press="handler.handlediscard" text="Discard Details"/>    
+        </VBox>
+    </Dialog>
+</core:FragmentDefinition>
+
+

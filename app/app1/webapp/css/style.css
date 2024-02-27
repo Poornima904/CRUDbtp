@@ -1,0 +1,19 @@
+#editDialog{
+    background-color: aqua;
+}
+.editDialog{
+    background-color: blue;
+}
+input[type="text"] {
+    border: 1px solid #4e0c16;
+    background-color: rgb(172, 229, 150);
+}
+#Create--helloDialog-scrollCont,#edit--editDialog-scroll{
+    background-color:rgb(232, 240, 229);
+    width: 500px;
+}
+#Create--dis, #edit--dis{
+    position: absolute;
+    right: 290px; /* Adjust this value as needed to control the distance from the right */
+    bottom: 0px; 
+}

@@ -1,0 +1,24 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+
+		<Dialog id="helloDialog" resizable="true" draggable="true" title="Add New Entries" class="sapUiContentPadding" >
+        <VBox>
+				<Label for="Plant" showColon="true" text="Plant" />
+				<Input id="Plant" placeholder="Enter Plant" />
+				<Label for="SBG" showColon="true" text="SBG" />
+				<Input id="SBG" placeholder="Enter SBG" />
+				<Label for="SBU" showColon="true" text="SBU" />
+				<Input id="SBU" placeholder="Enter SBU" />
+            
+   
+				<Button id="up" design="Emphasized"  core:require="{ handler:'app1/ext/controller/Createhand'}" 
+                press="handler.handlesave" text="Save"/>
+                <Button id="dis" design="Emphasized"  core:require="{ handler:'app1/ext/controller/Createhand'}" 
+                press="handler.handlediscard" text="Discard Details"/>
+			
+        </VBox>
+			
+		</Dialog>
+
+</core:FragmentDefinition>
+
+
